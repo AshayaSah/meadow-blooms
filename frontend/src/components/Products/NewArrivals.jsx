@@ -14,76 +14,18 @@ const NewArrivals = () => {
   const [newArrivals, setNewArrivals] = useState([]);
 
   useEffect(() => {
-    // const fetchNewArrivals = async () => {
-    //   try {
-    //     const response = await axios.get(
-    //       `${import.meta.env.VITE_BACKEND_URL}/api/products/new-arrivals`
-    //     );
-    //     setNewArrivals(response.data);
-    //   } catch (error) {
-    //     console.error(error);
-    //   }
-    // };
-    setNewArrivals([
-      {
-        name: "Classic Oxford Button-Down Shirt",
-        description:
-          "This classic Oxford shirt is tailored for a polished yet casual look. Crafted from high-quality cotton, it features a button-down collar and a comfortable, slightly relaxed fit. Perfect for both formal and casual occasions, it comes with long sleeves, a button placket, and a yoke at the back. The shirt is finished with a gently rounded hem and adjustable button cuffs.",
-        price: 39.99,
-        discountPrice: 34.99,
-        countInStock: 20,
-        sku: "OX-SH-001",
-        category: "Top Wear",
-        brand: "Urban Threads",
-        sizes: ["S", "M", "L", "XL", "XXL"],
-        colors: ["Red", "Blue", "Yellow"],
-        collections: "Business Casual",
-        material: "Cotton",
-        gender: "Men",
-        images: [
-          {
-            url: "https://picsum.photos/500/500?random=39",
-            altText: "Classic Oxford Button-Down Shirt Front View",
-          },
-          {
-            url: "https://picsum.photos/500/500?random=40",
-            altText: "Classic Oxford Button-Down Shirt Back View",
-          },
-        ],
-        rating: 4.5,
-        numReviews: 12,
-      },
-      {
-        name: "Slim-Fit Stretch Shirt",
-        description:
-          "A versatile slim-fit shirt perfect for business or evening events. Designed with a fitted silhouette, the added stretch provides maximum comfort throughout the day. Features a crisp turn-down collar, button placket, and adjustable cuffs.",
-        price: 29.99,
-        discountPrice: 24.99,
-        countInStock: 35,
-        sku: "SLIM-SH-002",
-        category: "Top Wear",
-        brand: "Modern Fit",
-        sizes: ["S", "M", "L", "XL"],
-        colors: ["Black", "Navy Blue", "Burgundy"],
-        collections: "Formal Wear",
-        material: "Cotton Blend",
-        gender: "Men",
-        images: [
-          {
-            url: "https://picsum.photos/500/500?random=41",
-            altText: "Slim-Fit Stretch Shirt Front View",
-          },
-          {
-            url: "https://picsum.photos/500/500?random=42",
-            altText: "Slim-Fit Stretch Shirt Back View",
-          },
-        ],
-        rating: 4.8,
-        numReviews: 15,
-      },
-    ]);
+    const fetchNewArrivals = async () => {
+      try {
+        const response = await axios.get(
+          `${import.meta.env.VITE_BACKEND_URL}/api/products/new-arrivals`
+        );
+        setNewArrivals(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
 
-    // fetchNewArrivals();
+    fetchNewArrivals();
   }, []);
 
   const handleMouseDown = (e) => {

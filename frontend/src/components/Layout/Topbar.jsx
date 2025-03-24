@@ -18,7 +18,7 @@ const Topbar = () => {
           </a>
         </div>
         <div className="text-sm text-center flex-grow">
-          <span>We ship worldwide - Fast and reliable shipping!</span>
+          <span>Handcrafted Petals, Forever in Bloom!</span>
         </div>
         <div className="text-sm hidden md:block">
           <a href="tel:+9779810000000" className="hover:text-gray-300">
