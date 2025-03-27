@@ -121,7 +121,7 @@ const UserManagement = () => {
           </div>
           <button
             type="submit"
-            className="w-60 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
+            className="w-60 bg-primary-green opacity-80 text-white py-2 px-4 rounded hover:opacity-100 transition-all duration-300 flex items-center justify-center space-x-2"
           >
             Add User
           </button>
