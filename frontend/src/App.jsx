@@ -21,6 +21,7 @@ import OrderManagement from "./components/Admin/OrderManagement";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import ProtectedRoute from "./components/Common/ProtectedRoute";
+import About from "./pages/About";
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
               element={<CollectionPage />}
             />
             <Route path="product/:id" element={<ProductDetails />} />
+            <Route path="about" element={<About />} />
             <Route path="checkout" element={<Checkout />} />
             <Route
               path="order-confirmation"

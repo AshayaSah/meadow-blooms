@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import heroImg from "../../assets/hero-banner.jpg";
+import heroImg from "../../assets/hero__banner.png";
 const Hero = () => {
   return (
     <section className="relative">
       <img
         src={heroImg}
-        alt="Rabbit"
+        alt="Hero Banner"
         className="w-full h-[400px] md:h-[600px] lg:h-[750px] object-cover"
       />
       <div className="absolute inset-0 bg-black bg-opacity-5 flex items-center justify-center">
@@ -19,7 +19,7 @@ const Hero = () => {
           </p>
           <Link
             to="#"
-            className="bg-rabbit-red text-white-950 px-6 py-2 rounded-md shadow-lg text-lg"
+            className="bg-primary-green text-white-950 px-6 py-2 rounded-md shadow-lg text-lg"
           >
             Shop Now
           </Link>

@@ -40,13 +40,13 @@ const Navbar = () => {
         {/* Center - Navigation Links */}
         <div className="hidden md:flex space-x-6">
           <Link
-            to="/collections/all?gender=Men"
+            to="/collections/all"
             className="text-gray-700 hover:text-black text-sm font-medium uppercase"
           >
             Shop
           </Link>
           <Link
-            to="/collections/all?gender=Women"
+            to="/about"
             className="text-gray-700 hover:text-black text-sm font-medium uppercase"
           >
             About
@@ -64,6 +64,7 @@ const Navbar = () => {
             FAQs
           </Link>
         </div>
+
         {/* Right - Icons */}
         <div className="flex items-center space-x-4">
           {user && user.role === "admin" && (
@@ -75,7 +76,7 @@ const Navbar = () => {
             </Link>
           )}
           {user && user.role === "customer" && (
-            <button className="px-4 py-2 rounded-lg bg-rabbit-red text-white text-sm font-medium hover:bg-gray-700 transition-all duration-300">
+            <button className="px-4 py-2 rounded-lg bg-primary-green text-white text-sm font-medium hover:bg-gray-700 transition-all duration-300">
               {user.name}
             </button>
           )}
@@ -121,7 +122,7 @@ const Navbar = () => {
           <h2 className="text-xl font-semibold mb-4">Menu</h2>
           <nav className="space-y-4">
             <Link
-              to="/collections/all?gender=Men"
+              to="/collections/all"
               onClick={toggleNavDrawer}
               className="block text-gray-600 hover:text-black"
             >

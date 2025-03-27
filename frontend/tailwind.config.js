@@ -4,7 +4,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        "rabbit-red": "#81985a",
+        primary: {
+          DEFAULT: "#123C69",
+          green: "#81985a",
+          text: "#AC3B61",
+        },
+        background: {
+          DEFAULT: "#EDC7B7",
+          secondary: "#EEE2DC",
+          muted: "#BAB2B5",
+        },
+        text: {
+          DEFAULT: "#000000",
+          light: "#BAB2B5",
+        },
       },
     },
   },

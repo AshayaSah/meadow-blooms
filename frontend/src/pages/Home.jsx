@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Hero from "../components/Layout/Hero";
+import SecondBanner from "../components/Layout/SecondBanner";
 import FeaturedCollection from "../components/Products/FeaturedCollection";
 import FeaturesSection from "../components/Products/FeaturesSection";
-import GenderCollectionSection from "../components/Products/GenderCollectionSection";
 import NewArrivals from "../components/Products/NewArrivals";
 import ProductDetails from "../components/Products/ProductDetails";
 import ProductGrid from "../components/Products/ProductGrid";
@@ -41,7 +41,6 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <GenderCollectionSection />
       <NewArrivals />
 
       {/* Best Seller */}
@@ -58,6 +57,8 @@ const Home = () => {
         </h2>
         <ProductGrid products={products} loading={loading} error={error} />
       </div>
+
+      <SecondBanner></SecondBanner>
 
       <FeaturedCollection />
       <FeaturesSection />

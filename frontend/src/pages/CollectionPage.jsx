@@ -51,16 +51,17 @@ const CollectionPage = () => {
       </button>
 
       {/* Filter Sidebar */}
-      <div
+      {/* <div
         ref={sidebarRef}
         className={`${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } fixed inset-y-0 z-50 left-0 w-64 bg-white overflow-y-auto transition-transform duration-300 lg:static lg:translate-x-0`}
       >
         <FilterSidebar />
-      </div>
+      </div> */}
+
       <div className="flex-grow p-4">
-        <h2 className="text-2xl uppercase mb-4">All Collection</h2>
+        <h2 className="text-2xl uppercase mb-4 text-center">All Collection</h2>
 
         {/* Sort Options */}
         <SortOptions />
