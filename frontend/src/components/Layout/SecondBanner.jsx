@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const SecondBanner = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full py-8">
+    <div className="flex flex-col justify-center items-center w-full py-8 border-t border-gray-200">
       <div className="flex items-center text-9xl lg:gap-8 font-bold">
         {"BOUQUET".split("").map((letter, index) => (
           <div

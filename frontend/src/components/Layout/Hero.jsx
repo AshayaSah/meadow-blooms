@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import heroImg from "../../assets/hero__banner.png";
+import heroImg from "../../assets/hero_banner_v3.svg";
 const Hero = () => {
   return (
     <section className="relative">

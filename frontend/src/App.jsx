@@ -22,6 +22,8 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 import ProtectedRoute from "./components/Common/ProtectedRoute";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
+import FAQ from "./pages/FAQ";
 
 const App = () => {
   return (
@@ -42,6 +44,8 @@ const App = () => {
             />
             <Route path="product/:id" element={<ProductDetails />} />
             <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="faqs" element={<FAQ />} />
             <Route path="checkout" element={<Checkout />} />
             <Route
               path="order-confirmation"

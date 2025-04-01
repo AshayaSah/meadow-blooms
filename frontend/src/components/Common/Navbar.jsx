@@ -52,13 +52,13 @@ const Navbar = () => {
             About
           </Link>
           <Link
-            to="/collections/all?category=Top Wear"
+            to="/contact"
             className="text-gray-700 hover:text-black text-sm font-medium uppercase"
           >
             Contact
           </Link>
           <Link
-            to="/collections/all?category=Bottom Wear"
+            to="/faqs"
             className="text-gray-700 hover:text-black text-sm font-medium uppercase"
           >
             FAQs
@@ -129,21 +129,21 @@ const Navbar = () => {
               Shop
             </Link>
             <Link
-              to="/collections/all?gender=Women"
+              to="/about"
               onClick={toggleNavDrawer}
               className="block text-gray-600 hover:text-black"
             >
               About
             </Link>
             <Link
-              to="/collections/all?category=Top Wear"
+              to="/contact"
               onClick={toggleNavDrawer}
               className="block text-gray-600 hover:text-black"
             >
               Contact
             </Link>
             <Link
-              to="/collections/all?category=Bottom Wear"
+              to="/faqs"
               onClick={toggleNavDrawer}
               className="block text-gray-600 hover:text-black"
             >
