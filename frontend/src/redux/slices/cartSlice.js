@@ -23,6 +23,7 @@ export const fetchCart = createAsyncThunk(
           params: { userId, guestId },
         }
       );
+
       return response.data;
     } catch (error) {
       console.error(error);

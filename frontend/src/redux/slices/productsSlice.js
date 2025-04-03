@@ -51,6 +51,23 @@ export const fetchProductDetails = createAsyncThunk(
 );
 
 // Async thunk to fetch similar products
+export const createProduct = createAsyncThunk(
+  "products/updateProduct",
+  async (productData) => {
+    const response = await axios.post(
+      `${import.meta.env.VITE_BACKEND_URL}/api/products/${id}`,
+      productData,
+      {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("userToken")}`,
+        },
+      }
+    );
+    return response.data;
+  }
+);
+
+// Async thunk to fetch similar products
 export const updateProduct = createAsyncThunk(
   "products/updateProduct",
   async ({ id, productData }) => {

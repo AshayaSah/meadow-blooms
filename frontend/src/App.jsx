@@ -24,6 +24,7 @@ import ProtectedRoute from "./components/Common/ProtectedRoute";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
+import AddProductPage from "./components/Admin/AddProductPage";
 
 const App = () => {
   return (
@@ -65,6 +66,7 @@ const App = () => {
             <Route index element={<AdminHomePage />} />
             <Route path="users" element={<UserManagement />} />
             <Route path="products" element={<ProductManagement />} />
+            <Route path="products/add" element={<AddProductPage />} />
             <Route path="products/:id/edit" element={<EditProductPage />} />
             <Route path="orders" element={<OrderManagement />} />
           </Route>
